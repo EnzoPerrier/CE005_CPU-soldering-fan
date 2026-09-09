@@ -1,0 +1,6 @@
+CorrelationId: e02cc5f3-2e0d-46b8-9677-15d5ece0ae6e
+UTC DateTime: 10/21/2025 08:15:54
+
+The following files/folders have not been downloaded
+0. Projet 11 Banc de test EL418 - TTS/soft/TEST1/.metadata/.lock
+1. Projet 11 Banc de test EL418 - TTS/soft/webApp/server/script.js
