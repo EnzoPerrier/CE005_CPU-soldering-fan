@@ -2178,9 +2178,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_Dual_KKA"
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2188,7 +2192,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0 5.715 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2197,8 +2201,8 @@
 					)
 				)
 			)
-			(property "Value" "LED_Dual_KKA"
-				(at 0 -6.35 0)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2208,28 +2212,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Dual LED, common anode on pin 3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2240,7 +2222,40 @@
 					)
 				)
 			)
-			(property "ki_keywords" "LED diode bicolor dual"
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2262,10 +2277,10 @@
 					)
 				)
 			)
-			(symbol "LED_Dual_KKA_0_1"
+			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -4.572 0) (xy -2.54 0)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -2275,20 +2290,33 @@
 						(type none)
 					)
 				)
-				(circle
-					(center -2.54 0)
-					(radius 0.2794)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 3.81) (xy -1.27 1.27) (xy 1.27 2.54) (xy -1.27 3.81)
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -2300,105 +2328,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 -3.81) (xy 1.27 -2.54) (xy -1.27 -1.27)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 4.572)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.81) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 5.08) (xy 3.556 6.604) (xy 2.794 6.604) (xy 3.556 6.604) (xy 3.556 5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy 2.032 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 4.064) (xy 4.826 5.588) (xy 4.064 5.588) (xy 4.826 5.588) (xy 4.826 4.826)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy 1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 1.905 -2.54)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -2406,11 +2339,11 @@
 					)
 				)
 			)
-			(symbol "LED_Dual_KKA_1_1"
-				(pin input line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "K1"
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2425,27 +2358,9 @@
 						)
 					)
 				)
-				(pin input line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "K2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.048)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -2453,7 +2368,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5500,6 +5415,12 @@
 		(uuid "28cea97c-59b7-4fcd-85ab-7dc40f9f89fc")
 	)
 	(junction
+		(at 267.97 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "351d3d45-7257-4082-90dc-e1e9b2a229ae")
+	)
+	(junction
 		(at 83.82 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5800,12 +5721,6 @@
 		(uuid "ec0716fd-3d28-4a01-b880-afa286dfea0a")
 	)
 	(junction
-		(at 267.97 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f121e372-1f31-427e-8a22-275dd7ddccea")
-	)
-	(junction
 		(at 213.36 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5816,6 +5731,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f441eaad-1b9d-4b8b-8954-7c87110f499c")
+	)
+	(junction
+		(at 267.97 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f52c29cf-0b00-47d7-8bb1-e30d8a1c133a")
 	)
 	(junction
 		(at 181.61 46.99)
@@ -5902,6 +5823,16 @@
 			(type default)
 		)
 		(uuid "0d29bee4-8e7a-4ce5-914f-ba2b0c934ef1")
+	)
+	(wire
+		(pts
+			(xy 267.97 60.96) (xy 267.97 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb242e4-35c1-4c58-9c0b-b87c4fa9f009")
 	)
 	(wire
 		(pts
@@ -6215,7 +6146,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 67.31) (xy 248.92 67.31)
+			(xy 238.76 67.31) (xy 251.46 67.31)
 		)
 		(stroke
 			(width 0)
@@ -6295,13 +6226,13 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 63.5) (xy 267.97 63.5)
+			(xy 259.08 60.96) (xy 267.97 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3eb73c75-8743-4226-b817-ed8a3e56f900")
+		(uuid "3f318a17-aff6-47d5-b3a3-1059c715eb1f")
 	)
 	(wire
 		(pts
@@ -6412,6 +6343,16 @@
 			(type default)
 		)
 		(uuid "47fee8e0-7c0a-4f30-a0d3-a6e50811abbb")
+	)
+	(wire
+		(pts
+			(xy 259.08 67.31) (xy 267.97 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ad63e6-36dd-48fa-bc13-91a82acc2fa7")
 	)
 	(wire
 		(pts
@@ -6785,16 +6726,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 67.31) (xy 248.92 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7176a306-2f12-4d89-831b-e5a8224fa062")
-	)
-	(wire
-		(pts
 			(xy 165.1 33.02) (xy 165.1 49.53)
 		)
 		(stroke
@@ -7095,7 +7026,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 78.74) (xy 267.97 63.5)
+			(xy 267.97 78.74) (xy 267.97 67.31)
 		)
 		(stroke
 			(width 0)
@@ -7735,7 +7666,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 63.5) (xy 267.97 41.91)
+			(xy 267.97 41.91) (xy 267.97 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8042,6 +7973,16 @@
 			(type default)
 		)
 		(uuid "ff966206-b88c-470f-91f5-efd04fa1543b")
+	)
+	(wire
+		(pts
+			(xy 248.92 60.96) (xy 251.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa57247-215b-433d-aaf9-24f1315be460")
 	)
 	(global_label "+Alim"
 		(shape input)
@@ -9329,7 +9270,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10058,88 +9999,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Dual_KKA")
-		(at 256.54 63.5 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3c224aa9-0b6a-4256-816e-a601f1bd850d")
-		(property "Reference" "D1"
-			(at 256.54 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_Dual_KKA"
-			(at 256.54 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "5BC-3-CA-F:3_PIN_CONNECTOR"
-			(at 255.27 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual LED, common anode on pin 3"
-			(at 256.54 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "668a8ef6-0743-43e5-a581-cad1cc5d1046")
-		)
-		(pin "1"
-			(uuid "944e149f-38b2-4426-86c8-b5ad7679b6db")
-		)
-		(pin "2"
-			(uuid "e33141ee-79af-4ee8-8828-faad7dc06978")
-		)
-		(instances
-			(project "005_CPU soldering fan"
-				(path "/4300f022-79da-40f1-87bd-693d4dceb3c0"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 245.11 154.94 0)
 		(unit 1)
@@ -10466,7 +10325,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10624,7 +10483,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11385,7 +11244,7 @@
 		(dnp no)
 		(uuid "631f7686-0cbe-4036-8d26-600ecd38d05a")
 		(property "Reference" "R5"
-			(at 234.696 61.722 90)
+			(at 234.95 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11395,7 +11254,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 234.696 64.262 90)
+			(at 234.95 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12413,6 +12272,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 255.27 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85b367fc-fd24-44ab-9ef0-9c97f36371cf")
+		(property "Reference" "D2"
+			(at 255.524 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED ROUGE"
+			(at 255.524 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d90be7a9-0491-4f56-91f7-4c6c75bfb85d")
+		)
+		(pin "1"
+			(uuid "799295ce-2352-43d9-b60d-9b8ba99af2b8")
+		)
+		(instances
+			(project "005_CPU soldering fan"
+				(path "/4300f022-79da-40f1-87bd-693d4dceb3c0"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 53.34 49.53 0)
 		(unit 1)
@@ -12779,7 +12728,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -14043,7 +13992,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -14687,12 +14636,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 255.27 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d123d595-6c40-434a-9848-b9e39d86e12f")
+		(property "Reference" "D1"
+			(at 253.6825 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED VERTE"
+			(at 253.6825 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+			(at 255.27 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 255.27 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 255.27 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5d526e07-2709-44e5-a6f1-8194bb52ef78")
+		)
+		(pin "1"
+			(uuid "98f1e39e-2fee-4075-b439-6714aa5c2c31")
+		)
+		(instances
+			(project "005_CPU soldering fan"
+				(path "/4300f022-79da-40f1-87bd-693d4dceb3c0"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 102.87 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
